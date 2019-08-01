@@ -1,0 +1,756 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+ body{
+ 	font-family: Roboto,Arial,Helvetica,sans-serif,Meiryo,MS PGothic;
+}
+
+ a{
+ 	transition: all .2s linear;
+}
+
+ .bg-wrapper{
+    background: #fff;
+    
+    width: auto;
+}
+.wrapper{
+    width: 980px;
+    margin: 20px auto;
+}
+.inner_wrapper_m{
+    margin: 0 auto;
+}
+.wrapper-l{
+	padding-top: 50px;
+}
+.wrapper-m{
+	padding: 20px 50px;
+}
+.content_2cl{
+	overflow: hidden;
+	display: flex;
+}
+.cl-l{
+	float: left;
+	width: 150%;
+}
+.cl-r{
+	float: left;
+	width: 50%;
+}
+.fullimg{
+	width: 100%;
+}
+.fullimg_s{
+	width: 80%;
+}
+.products {
+    padding-top: 33px;
+}
+.wrap{
+    display: flex;
+}
+.products .item{
+    width: 50%;
+}
+.products .item img{
+    width: 100%;
+}
+.products .pic{
+    width: 50%;
+}
+.products .text{
+    padding: 0 20px
+}
+/*---tab---*/
+#tabs-nav{
+   margin: 0;
+   padding: 0;
+   position: relative;
+   text-align: center
+}
+a.tabs-menu {
+   display: inline-block;
+   background-color: #DDD2B7;
+   font-size: 16px;
+   font-family: Arial,Helvetica,sans-serif;
+   color: #fff;
+   padding: 10px 12%;
+   font-weight: bold;
+   text-decoration: none;
+   border: solid 1px #DDD2B7;
+   border-bottom: 0;
+   border-radius: 3px 3px 0 0;
+   margin-left: -4px;
+ 
+}
+a.tabs-menu.tabs-menu-active {
+   background-color:#fff;
+   text-shadow: 1px 1px 0px 727171;
+   border: solid 1px #727171;
+   color: #727171;
+   border-bottom: 0;
+}
+.tabs-container {
+    /****border-top: solid 1px #727171 ;**/
+   margin-top: -1px;
+   background-color: #fff;
+   overflow: hidden;
+   box-shadow: 0px -8px 13px -12px rgba(0,0,0,0.5);
+
+}
+.tabs-panel {
+   display: none;
+   min-height: 150px;
+   overflow: auto;
+   padding: 20px 90px;
+   height: auto;
+}
+/******Form*******/
+/* Basic Grey */
+.title_h3 {
+    font-size: 1.6em;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: center;
+    color: #ce005b;
+}
+.basic-grey {
+    margin: 0px auto;
+    width: 700px;
+    background: #F7F7F7;
+    padding: 38px;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #E4E4E4;
+}
+.basic-grey h1 {
+	font-size: 25px;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	border-bottom:1px solid #E4E4E4;
+	margin: -10px -15px 30px -10px;;
+	color: #888;
+}
+.basic-grey h1>span {
+	display: block;
+	font-size: 11px;
+}
+.basic-grey label {
+	display: block;
+	margin: 0px;
+}
+.basic-grey label>span {
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 80%;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+	padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+	background: #FFF url('down-arrow.png') no-repeat right;
+	background: #FFF url('down-arrow.png') no-repeat right;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+	text-overflow: '';
+	width: 70%;
+	height: 35px;
+	line-height: 25px;
+}
+.basic-grey textarea{
+	height:100px;
+}
+.basic-grey .button {
+	background: #E27575;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .button:hover {
+	background: #CF7A7A
+}
+
+/*******Spce********/
+/*-----table-----*/
+table.spec-table {
+    background-color: #FFFFFF;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.spec-table td, table.spec-table th {
+    padding: 15px 5px;
+  }
+  table.spec-table tbody td {
+    font-size: 16px;
+    color: #4c4c4c;
+  }
+  table.spec-table tr:nth-child(odd) {
+    
+  }
+  table.spec-table tfoot td {
+    font-size: 14px;
+  }
+  table.spec-table tbody tr{
+       border-collapse: collapse;
+        border-top: 1px solid #f16488;
+         border-bottom: 1px solid #f16488;
+  }
+  table.spec-table tfoot .links {
+    text-align: right;
+  }
+  table.spec-table tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .spec_wrapper{
+	width: 300px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.spec_box{
+	width: 99%;
+    margin: 20px 0 15px 0;
+	text-align: center;
+	float: left;
+	padding: 12px 0;
+}
+.spec_box_02{
+    text-align: center;
+}
+.box_ppl{
+    border: 1px #ce005b solid;
+    border-radius: 7px;
+}
+.box_ppl a.link{
+    color: #ce005b;
+    padding: 12px 0px;
+}
+.box_ppl a.link:hover{
+	color: #ce005b;
+	background-color: #fff;
+	border-radius: 5px;
+}
+.box_blu{
+    background-color: #fff;
+    border: 1px #d7006d;
+        color:#333;
+        padding: 10px 20px;
+        border: 1px #666 solid;
+        border-radius: 2px;
+}
+.btn-knowMore {
+    font-size: 17px;
+    font-weight: 200;
+    color: #b9a574;
+    margin-left: 7px;
+}
+.btn-knowMore:after {
+    content: "+";
+    margin-left: 8px;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    background-color: #b9a574;
+}
+
+.contact_box:hover{
+        background-color: rgba(231,198,232,.2);
+}
+.spec_detail {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.specimg{
+	width: 80%;
+	margin: 0 auto;
+}
+@media only screen and (max-width: 865px) {
+.spec_detail{
+    width: 99%;
+}
+.title_h3{
+    font-size: 1.4em;
+    line-height: 1.5;
+}
+}
+/************CSS Animation***********/
+
+.animated { 
+   -webkit-animation-duration: 1s; 
+   animation-duration: 1s; 
+   -webkit-animation-fill-mode: both; 
+   animation-fill-mode: both; 
+} 
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+.fadeIn { 
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+}
+
+
+
+
+/*---font---*/
+.title_h2{
+	font-size: 1.8em;
+	font-weight: 400;
+	line-height: 1.4;
+	margin: auto;
+}
+.title_h3{
+	font-size: 1.6em;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+.frature_desc{
+    line-height: 1.5;
+    font-size: 18px;
+    transform: .5s;
+    color: #555;
+    font-weight: 400;
+}
+p {
+    /* font-size: 1em; */
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+    margin: 23px 0;
+    font-size: 11.7pt;
+    letter-spacing: 1.5px;
+}
+.spa_img{
+    width: 300px;
+}
+.align-c{
+	text-align: center;
+}
+.ppl{
+	color:#ce005b;
+	text-align: center;
+	
+}
+.spec_ppl{
+	color:#ce005b;
+	border: 1px #ce005b solid;
+	border-radius: 2px;
+	padding: 10px 20px;
+	transition: all.2s linear;
+}
+.spec_ppl:hover{
+	color: #FFFFFF;
+}
+.blu{
+	color: #ce005b;
+}
+.wt{
+	color: #fff;
+}
+.bg-w{
+	background-color: #fff;
+}
+
+
+.under_line{
+	line-height: 2;
+	border-bottom: 1px #f16488 solid;
+}
+
+.slogan{
+	background-image: url(https://twportal.blob.core.windows.net/images-himirror-eshop/productpage/us/3/himirror_business_wrapper_bg_01.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+	height: 400px;
+}
+.slogan p{
+	font-size: 22px;
+	line-height: 1.6;
+	text-align: right;
+	position: absolute;
+	right: 60px;
+	bottom: 50px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+.slogan_s{
+	display: none;
+}
+.main-product{
+	width: 735px;
+	position: relative;
+	top: -40px;
+	float: right;
+	height: 500px;
+	margin-right: 70px;
+}
+@media screen and (max-width: 735px){
+	.slogan{
+		background-image: initial;
+		height: initial;
+	}
+	.slogan p{
+		position: initial;
+		text-align: center;
+		padding: 20px 0;
+		font-size: 20px;
+	}
+	.slogan_s{
+		display: block;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 1024px){
+.slogan {
+    width: 100%;
+    background-size: 100%;
+}
+}
+@media (max-width: 1200px){
+.feature-hl li{
+    margin-right: 2%;
+    }
+}
+@media (max-width: 992px){
+.feature-hl{
+  padding: 20px 0;
+  }
+.feature-hl li{
+  margin-right: 0;
+  margin-left: 2%;
+  width: 48%;
+  margin-top: 10px;
+  }
+
+.wrapper {
+    width: 90%;
+    }
+.tabs-panel {
+    padding: 10px 5px;
+    }
+}
+@media (max-width: 350px){
+    .basic-grey {
+        width: 260px;
+        padding: 30px 0 55px 0px;
+    }
+}
+@media (min-width: 350px) and (max-width: 500px){
+    .basic-grey {
+        width: 315px;
+        padding: 30px 0 55px 0px;
+    }  
+}
+@media (min-width: 500px) and (max-width: 768px){
+    .basic-grey {
+        width: 600px;
+        padding: 30px 0 55px 0px;
+    }  
+}
+@media (max-width: 768px){
+.feature-hl li{
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 5px;
+    font-size: 16px;
+    }
+    .spec_wrapper {
+        width: 99%; 
+        margin: 0 auto;
+        overflow: hidden;
+    }    
+.basic-grey {
+    margin: 0px auto;
+    background: #F7F7F7;
+    padding: 55px 0 55px 0px;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border: 1px solid #E4E4E4;
+}
+.wrapper {
+    margin: -19px auto;
+    }
+.tabs-container {
+    margin-top: 11px;
+}
+.wrap{
+    display: block;
+}
+.products .pic {
+    width: 100%;
+}
+.products .text {
+    padding: 15px 0px;
+}
+.products .item {
+    width: 100%;
+}
+.fullimg{
+    background: url(https://twportal.blob.core.windows.net/images-himirror-eshop/productpage/us/3/himirror_business_wrapper_bg_sm.jpg) no-repeat;
+    }   
+
+a.tabs-menu {
+    display: inline;
+    background-color: #DDD2B7;
+    font-size: 16px;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #fff;
+    padding: 12px 3%;
+    font-weight: bold;
+    text-decoration: none;
+    border: solid 1px #DDD2B7;
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
+    margin-left: -4px;
+    }
+.feature-hl_p {
+    margin: 5px 0 10px 50px;
+    }
+}
+@media  (min-width: 1800px){
+.slogan {
+    height: 665px;
+}
+}
+
+@media (min-width: 735px) and (max-width: 980px){
+    .slogan {
+        height: 340px;
+    }
+        
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    .slogan {
+        height: 430px;
+    }    
+}
+@media (min-width: 1400px) and (max-width: 1800px){
+    .slogan {
+        height: 510px;
+    }    
+}
+@media only screen and (max-width: 1140px){
+.wrapper {
+    width: 90%;
+    }
+}
+
+.gradientBorder-bt-center-to-sides-01:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #fff, #727171, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #727171, #fff);
+    background-image: -o-linear-gradient(left, #fff, #727171, #fff);
+    background-image: linear-gradient(to right, #ffffff,#727171,#ffffff);
+}
+.gradientBorder-bt-center-to-sides-02:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin: 2px 0;
+    background-image: -webkit-linear-gradient(left, #fff, #d7006d, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #d7006d, #fff);
+    background-image: -o-linear-gradient(left, #fff, #d7006d, #fff);
+    background-image: linear-gradient(to right, #ffffff,#d7006d,#ffffff);
+}
+.feature-hl{
+    overflow: hidden;
+    display: block;
+    }
+.feature-t{
+    font-size: 22px;
+    line-height: 35px;
+    text-align: left;
+    margin:0px 0% 0 0%;
+    color: #D6056C;
+}
+.feature_p{
+    font-weight: 300;
+    line-height: 1.5;
+    color: #333;
+    margin: 0 0 18px 0;
+    font-size: 11.7pt;
+    letter-spacing: 1.5px;
+}
+.feature-hl li{
+    font-size: 22px;
+    line-height: 35px;
+    background-image: url(https://twportal.blob.core.windows.net/images-himirror-eshop/productpage/us/3/img_HiMirror_Product_feature-hl.png);
+    background-size:35px auto;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding-left: 43px;
+    margin:20px 5% 0 2%;
+    color: #D6056C;
+    }
+li.feature-hl-2{
+    background-position:0 -69px;
+    }
+li.feature-hl-3{
+    background-position:0 -105px;
+    }
+li.feature-hl-4{
+    background-position:0 -35px;
+    }
+.feature-hl_p{
+    margin: 5px 0 10px 59px;
+}
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(../../../images/us/landing/business/overlay.png) repeat 0 0; opacity: 0.9; filter: alpha(opacity = 90);}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; }
+    #cboxTopRight{width:21px; height:21px;}
+    #cboxBottomLeft{width:21px; height:21px;}
+    #cboxBottomRight{width:21px; height:21px;}
+    #cboxMiddleLeft{width:21px;}
+    #cboxMiddleRight{width:21px; }
+    #cboxTopCenter{height:21px; }
+    #cboxBottomCenter{height:21px; }
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{background:url(../../../images/us/landing/business/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(../../../images/us/landing/business/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(../../../images/us/landing/business/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(../../../images/us/landing/business/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; top:10px; right:10px; background:url(../../../images/us/landing/business/controls.png) no-repeat; width:32px; height:32px; text-indent:-9999px;}
+        #cboxClose:hover{background-color: :#efefef;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
