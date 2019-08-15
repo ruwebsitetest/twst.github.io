@@ -295,6 +295,7 @@ table.spec-table {
 .box_ppl{
     border: 1px #ce005b solid;
     border-radius: 7px;
+    color: #ce005b;
 }
 .box_ppl a.link{
     color: #ce005b;
